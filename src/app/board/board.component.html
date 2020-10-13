@@ -1,10 +1,10 @@
-<h1> Current Player: {{ player }} </h1>
+<h2 class="center"> Current Player: {{ player }} </h2>
 
-<button nbButton outline status="danger" (click)="newGame()">Start New Game</button>
+<button nbButton outline status="danger" class="center" (click)="newGame()">Start New Game</button>
 
-<h2 *ngIf="winner">
+<h4 *ngIf="winner">
   Player {{ winner }} won the game!
-</h2>
+</h4>
 
 <main>
   <app-square
